@@ -44,6 +44,8 @@ Credit: Leah Perlmutter's CSC-324 lecture slides
 
 https://docs.google.com/presentation/d/1fHp9DvbFh5Thz9vq-l7EesldGEcPmjjzXGhaQ_S77pI/edit?slide=id.g2bc8c146d8f_0_141#slide=id.g2bc8c146d8f_0_141
 
+Add the following lines to `~./bashrc` (bash, default for many Linux distros) or `~/.zshrc` (zsh, default for macOS), to use the following aliases instead of typing the full commands. This will help you view a visualization of your Git repositories faster.
+
 ```sh
 alias gs='git status'
 alias gd='git diff'
@@ -60,5 +62,4 @@ alias glad='git log --oneline --graph --all --pretty=format:"%C(yellow)% h%C(gre
 
 #### Learning resources
 
-[Learn Git Branching](learngitbranching.js.org)
-Man pages
+[Learn Git Branching](https://learngitbranching.js.org)
