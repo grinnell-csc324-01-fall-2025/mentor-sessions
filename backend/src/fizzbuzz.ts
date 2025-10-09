@@ -24,10 +24,10 @@ export function fizzBuzz(upperBound: number): Array<number | string> {
   return arr;
 }
 
-function main() {
-  for (const v of fizzBuzz(21)) {
-    console.log(v);
-  }
-}
+// function main() {
+//   for (const v of fizzBuzz(21)) {
+//     console.log(v);
+//   }
+// }
 
-main();
+// main();

@@ -1,0 +1,19 @@
+{
+  "name": "mentor-sessions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grinnell-csc324-01-fall-2025/mentor-sessions.git"
+  },
+  "author": "Tim Yu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grinnell-csc324-01-fall-2025/mentor-sessions/issues"
+  },
+  "homepage": "https://github.com/grinnell-csc324-01-fall-2025/mentor-sessions#readme",
+  "description": ""
+}

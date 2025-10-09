@@ -1,5 +1,5 @@
 import { expect, test, describe } from "vitest";
-import { fizzBuzz } from "./index";
+import { fizzBuzz } from "./fizzbuzz";
 
 describe("fizzBuzz tests", () => {
   const MAX = 100;

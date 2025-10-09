@@ -1,17 +1,22 @@
 {
   "name": "actions-demo",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "dist/app.js",
   "scripts": {
     "test": "vitest",
-    "start": "tsc && node dist/index.js"
+    "start": "tsc && node dist/app.js",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/node": "^24.7.1",
     "typescript": "^5.9.3",
     "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
   }
 }
