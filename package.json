@@ -9,7 +9,7 @@
     "start:frontend": "pnpm --filter frontend dev",
     "start:backend": "pnpm --filter backend start",
     "start": "concurrently -c \"auto\" \"pnpm start:frontend\" \"pnpm start:backend\"",
-    "test": "echo \"No tests\""
+    "test:e2e": "playwright test"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,11 @@
   "homepage": "https://github.com/grinnell-csc324-01-fall-2025/mentor-sessions#readme",
   "description": "",
   "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.7.1",
     "concurrently": "^9.2.1"
+  },
+  "dependencies": {
+    "msw": "^2.11.5"
   }
 }
