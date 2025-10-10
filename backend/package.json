@@ -1,11 +1,12 @@
 {
-  "name": "actions-demo",
+  "name": "backend",
   "version": "1.0.0",
   "main": "dist/app.js",
   "scripts": {
-    "test": "vitest",
     "start": "tsc && node dist/app.js",
-    "build": "tsc"
+    "build": "tsc",
+    "test": "vitest",
+    "test:run": "vitest run"
   },
   "keywords": [],
   "author": "",

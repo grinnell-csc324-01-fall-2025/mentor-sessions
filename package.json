@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:frontend": "pnpm --filter frontend test:run",
+    "test:backend": "pnpm --filter backend test:run",
+    "test:unit": "concurrently -c \"auto\" \"pnpm test:frontend\" \"pnpm test:backend\"",
+    "start:frontend": "pnpm --filter frontend dev",
+    "start:backend": "pnpm --filter backend start",
+    "start": "concurrently -c \"auto\" \"pnpm start:frontend\" \"pnpm start:backend\"",
+    "test": "echo \"No tests\""
   },
   "repository": {
     "type": "git",
@@ -15,5 +21,8 @@
     "url": "https://github.com/grinnell-csc324-01-fall-2025/mentor-sessions/issues"
   },
   "homepage": "https://github.com/grinnell-csc324-01-fall-2025/mentor-sessions#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
 }
