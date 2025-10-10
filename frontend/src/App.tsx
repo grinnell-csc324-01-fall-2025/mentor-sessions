@@ -51,21 +51,26 @@ function App() {
   return (
     <div>
       <p>
-        <button id="get-next" onClick={getNext}>Get next</button>
-        <button id="reset" onClick={reset}>Reset</button>
+        <button id="get-next" data-testid="get-next" onClick={getNext}>
+          Get next
+        </button>
+        <button id="reset" data-testid="reset" onClick={reset}>
+          Reset
+        </button>
       </p>
-      <form action={setMaximum}>
+      <form action={setMaximum} data-testid="form-set-max">
         <label>
-          Set new maximum:
+          Set new maximum (exclusive upper bound):
           <input
             name="max"
             type="number"
             value={formValue}
             onChange={handleChange}
+            data-testid="input-max"
             id="input-max"
           />
         </label>
-        <button type="submit">Confirm</button>
+        <button type="submit" data-testid="form-set-max-submit">Confirm</button>
       </form>
       <ListDisplay id="fizzbuzz-list-display" sourceList={list} />
     </div>
