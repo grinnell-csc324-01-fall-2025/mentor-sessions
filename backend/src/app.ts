@@ -1,9 +1,12 @@
 import express from "express";
 import { Request, Response } from "express";
 import { fizzBuzz } from "./fizzbuzz";
+import cors from "cors";
 
 const app = express();
 const port = 3001;
+
+app.use(cors());
 
 let fizzBuzzValues = fizzBuzz(21);
 let next = 0;
