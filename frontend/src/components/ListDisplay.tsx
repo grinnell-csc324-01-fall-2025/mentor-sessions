@@ -1,5 +1,5 @@
 interface ListDisplayProps {
-  id: string;
+  id?: string;
   sourceList: Array<number | string>;
 }
 
